@@ -1,0 +1,22 @@
+plugins {
+    id 'java'
+}
+
+group = 'com.geminixalp.mod'
+version = '1.0.0'
+archivesBaseName = 'geminixalp'
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+}
+
+repositories {
+    mavenCentral()
+    maven { url = "https://maven.minecraftforge.net" }
+    maven { url = "https://repo.maven.apache.org/maven2" }
+}
+
+dependencies {
+    compileOnly 'net.minecraft:minecraft_server:1.8.9'
+}
